@@ -1,0 +1,40 @@
+file image1.jpg 
+ duration 1
+file image2.jpg 
+ duration 1
+file image3.jpg 
+ duration 1
+file image4.jpg 
+ duration 1
+file image5.jpg 
+ duration 1
+file image6.jpg 
+ duration 1
+file image7.jpg 
+ duration 1
+file image8.jpg 
+ duration 1
+file image9.jpg 
+ duration 1
+file image10.jpg 
+ duration 1
+file image11.jpg 
+ duration 1
+file image12.jpg 
+ duration 1
+file image13.jpg 
+ duration 1
+file image14.jpg 
+ duration 1
+file image15.jpg 
+ duration 1
+file image16.jpg 
+ duration 1
+file image17.jpg 
+ duration 1
+file image18.jpg 
+ duration 1
+file image19.jpg 
+ duration 1
+file image20.jpg 
+ duration 1

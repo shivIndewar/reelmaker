@@ -1,0 +1,83 @@
+/* Container */
+.gallery-container {
+    padding: 3rem 0;
+    max-width: 1200px; /* Limiting the width */
+    margin: 0 auto; /* Centering the container */
+}
+
+/* Title */
+.gallery-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Grid Layout for Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Responsive grid columns */
+    gap: 1.5rem; /* Space between tiles */
+    padding: 1rem;
+}
+
+/* Video Tile Styling */
+.gallery-grid video {
+    width: 100%; /* Makes video take full width of the tile */
+    border-radius: 10px; /* Rounded corners for the video tiles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-grid video:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Play Overlay on Hover */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Darkened overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px; /* Rounded corners for overlay */
+}
+
+.video-overlay i {
+    color: white;
+    font-size: 3rem;
+}
+
+/* Show play icon on hover */
+.gallery-grid video:hover + .video-overlay {
+    opacity: 1;
+}
+
+/* Ensuring the videos and overlay are in a container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller videos on tablets */
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}

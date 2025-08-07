@@ -1,0 +1,1 @@
+ELEVENLABS_API_KEY ="your_11-labs-api-key-here" # Replace with your actual ElevenLabs API key
